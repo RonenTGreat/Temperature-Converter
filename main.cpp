@@ -12,6 +12,9 @@
 using namespace std;
 
 int main() {
+    int choose;
+    double celsius, kelvin, fahrenheit;
+
     cout << "Enter the conversion you want to perform." << endl;
     cout << "1.Celsius to Kelvin"<< endl;
     cout << "2.Celsius to Fahrenheit"<< endl;
@@ -19,6 +22,13 @@ int main() {
     cout << "4.Kelvin to Fahrenheit"<< endl;
     cout << "5.Fahrenheit to Celsius"<< endl;
     cout << "6.Fahrenheit to Kelvin"<< endl;
+
+    cout << ">> ";
+    cin >> choose;
+
+    switch (choose) {
+        
+    }
 
 
 
