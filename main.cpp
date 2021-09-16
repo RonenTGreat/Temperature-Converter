@@ -16,52 +16,49 @@ int main() {
     double temperature;
 
     cout << "Enter the conversion you want to perform." << endl;
-    cout << "1.Celsius to Kelvin"<< endl;
-    cout << "2.Celsius to Fahrenheit"<< endl;
-    cout << "3.Kelvin to Celsius"<< endl;
-    cout << "4.Kelvin to Fahrenheit"<< endl;
-    cout << "5.Fahrenheit to Celsius"<< endl;
-    cout << "6.Fahrenheit to Kelvin"<< endl;
+    cout << "1.Celsius to Kelvin" << endl;
+    cout << "2.Celsius to Fahrenheit" << endl;
+    cout << "3.Kelvin to Celsius" << endl;
+    cout << "4.Kelvin to Fahrenheit" << endl;
+    cout << "5.Fahrenheit to Celsius" << endl;
+    cout << "6.Fahrenheit to Kelvin" << endl;
 
     cout << ">> ";
     cin >> choice;
 
-    if(choice == 1) {
+    if (choice == 1) {
         cout << "Enter temperature in Celsius: ";
         cin >> temperature;
         double celsiusToKelvin = temperature + 273.15;
         cout << temperature << "\370C in Kelvin is " << celsiusToKelvin << "K" << endl;
-    }
-    else if(choice == 2){
+    } else if (choice == 2) {
         cout << "Enter temperature in Celsius: ";
         cin >> temperature;
         double celsiusToFahrenheit = (temperature * (9.0 / 5.0) + 32.0);
         cout << temperature << "\370C in Fahrenheit is " << celsiusToFahrenheit << "\370F" << endl;
-    }
-
-    else if(choice == 3){
+    } else if (choice == 3) {
         cout << "Enter temperature in Kelvin: ";
         cin >> temperature;
         double kelvinToCelsius = temperature - 273.15;
         cout << temperature << "K in Celsius is " << kelvinToCelsius << "\370C" << endl;
 
-    }
-
-    else if(choice == 4){
+    } else if (choice == 4) {
         cout << "Enter temperature in Kelvin: ";
         cin >> temperature;
         double kelvinToFahrenheit = (temperature - 273.15) * (9.0 / 5.0) - 32;
-        cout << temperature << "K in Fahrenheit is " << kelvinToFahrenheit <<"\370F" << endl;
-    }
-
-    else if(choice == 5){
+        cout << temperature << "K in Fahrenheit is " << kelvinToFahrenheit << "\370F" << endl;
+    } else if (choice == 5) {
         cout << "Enter temperature in Fahrenheit: ";
         cin >> temperature;
         double fahrenheitToCelsius = (temperature - 32) * (5.0 / 9.0);
         cout << temperature << "\370F in Celsius " << fahrenheitToCelsius << "\370C" << endl;
     }
-
-
+    else if (choice == 6) {
+        cout << "Enter temperature in Fahrenheit: ";
+        cin >> temperature;
+        double fahrenheitToKelvin = (temperature - 32) * (5.0 / 9.0) + 273.15;
+        cout << temperature << "\370F in Kelvin " << fahrenheitToKelvin << "K" << endl;
+    }
 
     return 0;
 }
