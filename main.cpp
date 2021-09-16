@@ -22,7 +22,6 @@ int main() {
     cout << "4.Kelvin to Fahrenheit" << endl;
     cout << "5.Fahrenheit to Celsius" << endl;
     cout << "6.Fahrenheit to Kelvin" << endl;
-    cout << "7.Quit" << endl;
 
     cout << ">> ";
     cin >> choice;
