@@ -58,7 +58,8 @@ int main() {
         cin >> temperature;
         double fahrenheitToKelvin = (temperature - 32) * (5.0 / 9.0) + 273.15;
         cout << temperature << "\370F in Kelvin " << fahrenheitToKelvin << "K" << endl;
+    } else{
+        cout << "Enter a valid input please." << endl;
     }
-
     return 0;
 }
